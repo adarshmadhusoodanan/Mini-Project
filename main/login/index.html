@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        {% endif %}
+        <h1 class="heading">Student Login</h1>
+        <form method="POST" action="/login">
+            <label for="student-id">Student ID:</label><br>
+            <input type="text" id="student_id" name="student_id"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Login"> </a>
+        </form>
+        <p class="register">Not registered? <a href="/register">Register here</a></p>
+
+    </div>
+</body>
+</html>
