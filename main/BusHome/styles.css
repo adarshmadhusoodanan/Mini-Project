@@ -18,10 +18,7 @@ html{
 }
 section{
     padding: 10rem 10% ;
-    background-image: url('"C:\Users\user\OneDrive\Desktop\Mini project\S6-Mini Project\Mini-Project\main\assets\WhatsApp Image 2024-07-05 at 01.05.41_6ba522ac.jpg"');
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; 
+
 }
 
 
@@ -72,14 +69,22 @@ section{
 
 }
 
-body{
-    text-align: center;
+
+
+
+.projects{
     display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh ;
+    align-items: flex-start;
     justify-content: center;
+
+    background-image: url('WhatsApp\ Image\ 2024-07-05\ at\ 01.05.41_6ba522ac.jpg');
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; 
 }
-
-
-
 
 
 
@@ -90,14 +95,16 @@ body{
 
 }
 .projects .content .title{
+    text-align: center;
     font-size: 6rem;
-    color: #000000;
+    color: #ffffff;
     text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
 .project-container {
-    padding-top: 20px;
+    padding-top: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -106,6 +113,8 @@ body{
 
 .project-container h2{
     color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-container .image{
@@ -122,9 +131,10 @@ body{
  
 }
 .project{
-    background: #444444;
-    padding: 20px;
-    margin: 10px;
+    background: #081956;
+    
+    padding: 10px;
+    margin: 30px;
     border-radius: 10px;
     width: 100px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
