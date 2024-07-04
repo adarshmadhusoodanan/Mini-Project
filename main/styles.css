@@ -223,72 +223,7 @@ section{
 
 /*  end   */
 
-/* projects 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    min-height: 100vh ;
-    align-items: flex-start;
-    justify-content: center;
-    background: #f1f1f1;
 
-}
-.projects .content{
-    flex: 1 1 40rem;
-    padding-top: 6.5em;
-
-}
-.projects .content .title{
-    font-size: 6rem;
-    color: #000000;
-    text-transform: uppercase;
-
-}
-
-.project-container {
-    padding-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-.project-container h2{
-    color: #ffffff;
-}
-
-.project-container .image{
-    flex: 1 1 1rem;
-    padding-top: 20px;
- 
-}
-
-.project-container .image img{
-  
-    width: 100%;
-    
-    
- 
-}
-.project{
-    background: #444444;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
-    text-align: left;
-}
-
-.project:hover{
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgb(255, 0, 0, 100);
-    color: red;
-
-}
-
- end*/
 
 /* contact */
 
