@@ -1,0 +1,140 @@
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    font-family: Inconsolata, monospace;
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+section{
+    padding: 10rem 10% ;
+    background-image: url('"C:\Users\user\OneDrive\Desktop\Mini project\S6-Mini Project\Mini-Project\main\assets\WhatsApp Image 2024-07-05 at 01.05.41_6ba522ac.jpg"');
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; 
+}
+
+
+.header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    z-index: 2;
+    background: #090f29;
+ 
+}
+
+
+
+.header .logo {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+
+
+.header .button .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #ffffff;
+    border-radius: 30px;
+    background: #ff0000;
+    cursor: pointer;
+}
+
+.header .content .btn:hover{
+    letter-spacing: .2rem;
+
+}
+
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+.projects .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5em;
+
+}
+.projects .content .title{
+    font-size: 6rem;
+    color: #000000;
+    text-transform: uppercase;
+
+}
+
+.project-container {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.project-container h2{
+    color: #ffffff;
+}
+
+.project-container .image{
+    flex: 1 1 1rem;
+    padding-top: 20px;
+ 
+}
+
+.project-container .image img{
+  
+    width: 100%;
+    
+    
+ 
+}
+.project{
+    background: #444444;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    text-align: left;
+}
+
+.project:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgb(255, 0, 0, 100);
+    color: red;
+
+}
+
