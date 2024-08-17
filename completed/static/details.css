@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+    background-image: url("/static/assets/img/hero1-bg.jpg");
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    background: #12175fe9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(186, 150, 4);
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.student-table th, .student-table td {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.student-table th {
+    background-color: #01083d;
+    color: rgb(158, 158, 165);
+}
+
+.student-table td{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+.student-table tr:nth-child(even) {
+    background-color: #030543;
+}
+
+/* .student-table tr:hover {
+    background-color: #ddd;
+} */

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REGISTARTION</title>
+<link rel="stylesheet" href="../static/register.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Student Register</h1>
+       
+        <form method="POST" action="/register">
+            <label for="student_id">Student ID</label><br>
+            <input type="text" id="student_id" name="student_id" required><br>
+            <label for="student_name">Name</label><br>
+            <input type="text" id="student_name" name="student_name" required><br>
+            <label for="branch_name">Branch</label><br>
+            <input type="text" id="branch_name" name="branch_name" required><br>
+            <label for="semester">Semester</label><br>
+            <input type="text" id="semester" name="semester" required><br>
+            <label for="text" id="phone_no">Phone no</label><br>
+            <input type="text" id="phone_no" name="phone_no" required><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <a href="index"><input type="submit" value="Register"></a>
+        </form>
+        
+
+    </div>
+</body>
+</html>

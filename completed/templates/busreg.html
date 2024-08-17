@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bus Registration</title>
+    <link rel="stylesheet" href="/static/busreg.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Bus Registration</h1>
+        <form id="registration-form" action="/updatebusreg" method="post">
+            <div class="form-group">
+                <label for="Place">Place:</label>
+                <input type="text" id="Place" name="place" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="route">Select Route:</label>
+                <select id="route" name="route" required onchange="updateFeeAmount(this)">
+                    <option value="" disabled selected>Select a route</option>
+                    <option value="Thaliparamba">Thaliparamba </option>
+                    <option value="Trikaripur">Trikaripur </option>
+                    <option value="Pazhayangadi">Pazhayangadi </option>
+                    <option value="Payyannur">Payyannur</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="FeeAmount">Fee Amount:</label>
+                <input type="number" id="FeeAmount" name="feeamount" required readonly>
+            </div>
+            <div class="form-group">
+                
+                <label for="">Academic year:</label>
+                <input type="number" id="AcademicYear" name="academicyear" required>
+            </div>
+
+          
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit">Confirm</button>
+        </form>
+    </div>
+
+    <script>
+        function updateFeeAmount(selectElement) {
+            const feeAmountInput = document.getElementById('FeeAmount');
+            if(selectElement.value === "Thaliparamba" ){
+            feeAmountInput.value = "9000";
+            }
+
+            if(selectElement.value === "Trikaripur" ){
+            feeAmountInput.value = "6000";
+            }
+
+            if(selectElement.value === "Pazhayangadi" ){
+            feeAmountInput.value = "9000";
+            }
+
+            if(selectElement.value === "Payyannur" ){
+            feeAmountInput.value = "5000";
+            }
+        }
+    </script>
+</body>
+</html>

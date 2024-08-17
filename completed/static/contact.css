@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+
+body {
+    background-image:url("/static/assets/img/hero-bg.jpg");
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #292183;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 100px;
+    background-color: #12175f;
+    box-shadow: 0 0 10px rgba(2, 2, 46, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(186, 150, 4);
+    font-family: "Montserrat", sans-serif;
+
+}
+
+h2 {
+    color: rgb(129, 122, 93);
+    margin-top: 0;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+
+.contact-info,
+.about {
+    margin-bottom: 20px;
+}
+
+.contact-info p,
+.about p {
+    color: #faf8f8;
+    line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}

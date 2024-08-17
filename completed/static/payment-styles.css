@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+    background-color: navy;
+    background-image:url("/static/assets/img/hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #12175f;
+    padding: 80px;
+    border-radius: 8px;
+   
+    box-shadow: 0px 0px 20px 1px #14014a;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(186, 150, 4);
+    margin-bottom: 20px;
+}
+
+form {
+     font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 5px;
+    display: block;
+    color: white;
+}
+
+input, select, button, .fixed-amount {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fixed-amount {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f0f0f0;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    background-color: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+#payment-info {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-methods label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment-methods img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.payment-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}

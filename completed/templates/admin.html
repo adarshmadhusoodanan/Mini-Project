@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/admin.css" />
+    <title>Admin</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navlogo">COLLEGE BUS ADMIN ACCESS</div>
+      <div class="navitems">
+        <div class="navitem"><a href="businfo">BUS INFO</a></div>
+        <div class="navitem"><a href="details">STUDENT DETAILS</a></div>
+        <div class="navitem">
+          <a href="/logout"><button class="btn">LOGOUT</button></a>
+        </div>
+      </div>
+    </nav>
+    <section id="businfo">
+      <div class="container_businfo">
+        <div class="hero_businfo">
+          <div class="businfo">
+            <div class="businfo_header"><h2>Payment update</h2></div>
+            <form method="POST" action="/updateinfo">
+              <div class="businfo_body">       
+                <div class="businfo_body_left">
+                  <label for="student_id">STUDENT ID</label><br>
+                  <label for="paid">Amount paid</label><br>
+                  <label for="Due">Due</label><br>
+                </div>
+                <div class="businfo_body_right">
+                  <input type="text" id="student_id" name="student_id" required><br>
+                  <input type="number" id="paid" name="paid" required><br>
+                  <input type="number" id="due" name="due" required><br>
+                </div>
+              </div>
+              <button type="submit" class="btn">Update info</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    

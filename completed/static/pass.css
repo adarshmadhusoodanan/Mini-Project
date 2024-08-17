@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+    background-image:url("/static/assets/img/hero1-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    background: -webkit-linear-gradient(to right, #0b0bb5, #1212a2);  /* Chrome 10-25, Safari 5.1-6 */
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #0c047e;
+}
+
+.student-profile .card {
+    border-radius: 10px;
+    color: #000;
+}
+
+.student-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    color: #020286;
+    margin: 10px auto;
+    border: 10px solid #fff;
+    border-radius: 50%;
+}
+
+.student-profile .card h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+.student-profile .card p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+.student-profile .table th,
+.student-profile .table td {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+}

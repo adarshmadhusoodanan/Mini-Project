@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --primary: #12175f;
+  --primary-dark: rgb(165, 165, 165);
+  --primary-light: rgb(222, 218, 218);
+  --dark: #rgb(222, 218, 218);
+  --light: #rgb(222, 218, 218);
+  --accent: #1b0556;
+  --accent-light: rgb(78, 68, 217);
+  --accent-dark: rgb(222, 218, 218);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 5em;
+  scroll-behavior: smooth;
+}
+
+body {
+ 
+  background-image: url("/static/assets/img/hero1-bg.jpg");
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container {
+  color: #181e74;
+  padding: 80px;
+  position: relative;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  align-self: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 90px;
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 1rem;
+  color: rgb(186, 150, 4);
+  background-color: var(--accent);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+
+.btn:hover {
+  background-color: #030749;
+  transform: scale(1.05);
+}
+
+nav {
+  padding: 1em 3em;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px var(--primary-dark);
+  background-color: #10166a;
+  z-index: 9;
+}
+
+.navlogo {
+ 
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: rgb(186, 150, 4);
+}
+
+.navitems {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 32px;
+}
+
+.navitem {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navitems .navitem:first-child {
+  margin-left: 100px;
+}
+
+.navitems .navitem:nth-child(2) {
+  margin-right: -100px;
+}
+
+.navitem a {
+  text-decoration: none;
+  color: rgb(186, 150, 4);
+}
+
+.navitem a:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+
+.container h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 100px 50px;
+  color: rgb(186, 150, 4);
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 10%;
+  z-index: -1;
+  mask-image: linear-gradient(rgba(27, 22, 22, 0.592), rgb(27, 22, 22));
+  -webkit-mask-image: linear-gradient(rgba(27, 22, 22, 0.592), rgb(27, 22, 22));
+}
+
+.hero {
+  /* content: ""; */
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  max-height: 60vh;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  overflow: auto;
+  flex-wrap: wrap;
+  border-top: solid 1px var(--primary-dark);
+  border-bottom: solid 1px var(--primary-dark);
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  min-width: 372px;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  background-color: #12175f;
+  z-index: 1;
+}
+
+thead tr {
+  position: sticky;
+  top: 0;
+}
+
+table thead tr {
+  background-color: #050e3e;
+  color: var(--light);
+  text-align: left;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  color: white;
+}
+
+table tbody tr {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.content-table tbody tr:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--accent);
+}
+
+.container_businfo {
+  position: relative;
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.container_businfo::before {
+  content: "";
+  background-image: url("/static/admin_pattern.svg");
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 10%;
+  z-index: -1;
+  mask-image: linear-gradient(rgb(27, 22, 22), rgba(27, 22, 22, 0.372));
+  -webkit-mask-image: linear-gradient(rgb(27, 22, 22), rgba(27, 22, 22, 0.371));
+}
+
+.hero_businfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 1px #0b0129;
+}
+
+.businfo {
+  color: rgb(223, 15, 15);
+  min-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.businfo_header {
+  width: 100%;
+  background-color: var(--accent);
+}
+
+.businfo_header h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 12px 0px;
+  color: rgb(255, 255, 255);
+}
+
+.businfo_body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.businfo_body_left {
+  color: white;
+  padding: 40px;
+  width: 500px;
+  text-align: left;
+  flex: 2;
+}
+
+.businfo_body_right {
+  padding: 40px;
+  width: 100%;
+  text-align: left;
+  flex: 3;
+}
+
+.businfo_body_right input {
+  width: 100%; 
+}
+
+.businfo_body_right div:nth-child(odd) {
+  background-color: #12175fe9;
+}
+

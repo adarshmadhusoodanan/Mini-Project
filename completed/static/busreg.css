@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+    background-image:url("/static/assets/img/hero-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: navy;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #12175f;
+    padding: 80px;
+    border-radius: 8px;
+     box-shadow: 0px 0px 20px 1px #0b0129;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.container a{
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(186, 150, 4);
+    margin-bottom: 20px;
+    margin-left: 270px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 5px;
+    display: block;
+    color: white;
+}
+
+input, select, button {
+    font-family: "Montserrat", sans-serif;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    background-color:rgb(1, 1, 81);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: rgb(1, 1, 81);
+}
+
+#fee-display, #payment-info {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}

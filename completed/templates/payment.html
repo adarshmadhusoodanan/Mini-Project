@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="/static/payment-styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Payment</h1>
+        <div id="payment-info" class="form-group"></div>
+        <form id="payment-form" onsubmit="calculateBalance(event)">
+            {% for data in feedata %}
+            <div class="form-group">
+                <label for="fee-amount">Fee Amount:</label>
+                <div id="fee-amount" class="fixed-amount">{{ data[0] }}</div>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="amount-paid">Amount Paid:</label>
+                <div id="amount-paid" class="fixed-amount">{{ data[1] }}</div>
+            </div>
+            <div class="form-group">
+                <label for="due">Due:</label>
+                <div id="due" class="fixed-amount">{{ data[2] }}</div>
+            </div>
+            
+            {% endfor %}
+            <button type="submit" formaction="/paysbi">Pay</button>
+        </form>
+        <div id="message" class="message"></div>
+    </div>
+    
+</body>
+</html>
